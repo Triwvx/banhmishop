@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cart</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+        h2 {
+            text-align: left;
+            padding: 10px;
+            margin: 10px;
+        }
+        .banner {
+            background-image: /* The image used */
+                url(https://carlsbadcravings.com/wp-content/uploads/2022/07/banh-mi-sandwich-recipe-7-480x270.jpg);
+            height: 200px;
+            color: white;
+            display: inline-block;
+            width: 3500px;
+        }
+        .dashboard,
+        .menu,
+        .logout {
+            position: relative;
+            float: right;
+            width: 150px;
+        }
+        table {
+            align-content: center;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px; 
+            margin: 10px;
+        }
+        td, th {
+            width: auto;
+            padding: 10px;
+            margin: 10px; 
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+        a.bottom-links {
+            display: inline-block;
+            margin-right: 100px;
+            margin: 5px; 
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <div>
+        <a class="dashboard" href="/dashboard">Dashboard</a>
+        <a class="menu" href="/menu">Menu</a>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+
+    <h1>View Cart</h1>
+    <div>
+        <h2>Your Order:</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Vietnamese Coffee</td>
+                <td>Vietnamese drip coffee with condensed milk, iced</td>
+                <td>1</td>
+                <td>13.50</td>
+            </tr>
+        </table>
+
+        <a class="bottom-links"href="/menu">Start Over</a> |
+        <a class="bottom-links"href="">Place Order</a>
+    </div>
+
+    
+</body>
+</html>

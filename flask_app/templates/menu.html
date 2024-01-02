@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        .banner {
+            background-image:
+                /* The image used */
+                url(https://carlsbadcravings.com/wp-content/uploads/2022/07/banh-mi-sandwich-recipe-7-480x270.jpg);
+            height: 200px;
+            color: white;
+            display: inline-block;
+            width: 3500px;
+        }
+        .dashboard,
+        .cart,
+        .logout {
+            position: relative;
+            float: right;
+            width: 150px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 20px;
+        }
+        img {
+            height: 200px;
+            width: 300px;
+            border: 1px solid sienna;
+        }
+        .display {
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        .banh-mi, 
+        .drinks, 
+        .desserts{
+            display: inline-block;
+            margin: 40px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner"></div>
+    <br>
+    <div>
+        <a class="dashboard" href="/dashboard">Dashboard</a>
+        <a class="cart" href="/view-cart">View Cart</a>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+    <h1>Lyn's Banh Mi's Shop Menu</h1>
+    <h2>Menu Items</h2>
+    <div class="display">
+        <div class="banh-mi">
+            <div class="">
+                <p>The Original Banh mi</p>
+                <img src="{{url_for('static', filename='images/original.jpg')}}" alt="orginal banh mi">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+            <div class="">
+                <p>Chicken lemongrass Banh Mi</p>
+                <img src="{{url_for('static', filename='images/lemongrass-chicken-banh-mi.jpg')}}" alt="chicken banh mi">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+            <div>
+                <p>Tofu Banh Mi</p>
+                <img src="{{url_for('static', filename='images/tofu.jpg')}}" alt="tofu banh mi">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+        </div>
+        <div class="drinks">
+            <div class="">
+                <p>Vietnamese Coffee</p>
+                <img src="{{url_for('static', filename='images/viet_coffee.jpg')}}" alt="viet_coffee">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+            <div>
+                <p>Fresh Coconut with Pineapple blended</p>
+                <img src="{{url_for('static', filename='images/coconut.jpg')}}" alt="coconut">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+            <div>
+                <p>Pennywort Drink</p>
+                <img src="{{url_for('static', filename='images/pennywort.jpg')}}" alt="Pennywort drink">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+        
+        </div>
+        <div class="desserts">
+            <div class="">
+                <p>Cream puff</p>
+                <img src="{{url_for('static', filename='images/cream_puff.jpg')}}" alt="cream puff">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+            <div>
+                <p>Grass Jelly Desert</p>
+                <img src="{{url_for('static', filename='images/jellydesert.jpg')}}" alt="grass jelly desserts">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+            <div>
+                <p>Three Color Dessert</p>
+                <img src="{{url_for('static', filename='images/threecolordessert.jpg')}}" alt="three color dessert">
+                <br>
+                <a class="order" href="/view-cart">Order now</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

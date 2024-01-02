@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home page </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .banner {
+            background-image: /* The image used */
+                url(https://carlsbadcravings.com/wp-content/uploads/2022/07/banh-mi-sandwich-recipe-7-480x270.jpg);
+            height: 200px;
+            color: white;
+            display: inline-block;
+            width: 3500px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+        a {
+            display: inline;
+            text-align: right;
+        }
+        .login,
+        .account,
+        .menu {
+            position: relative;
+            float: right;
+            width: 150px;
+            margin-right: 30px;
+        }
+        .account {
+            margin-right: -15px;
+        }
+        .display {
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            margin-bottom: 20px;
+        }
+        img {
+            height: 200px;
+            width: 300px;
+            border: 1px solid sienna;
+        }
+        button {
+            border: 1.5px solid sienna;
+            border-radius: 5%;
+            display: block;
+            margin-top: 10px;
+            background-color: seashell;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <div>
+        <a class="login" href="/register">Login</a>
+        <a class="account" href="/register">Create Account</a>
+        <a class="menu" href="/menu">Menu</a>
+    </div>
+    <br>
+    <h1>Welcome to Lyn's Banh Mi Shop!</h1>
+    <br>
+    <br>
+    <div class="display">
+        <div class="col-1">
+            <p>The Original Banh mi</p>
+            <img src="{{url_for('static', filename='images/original.jpg')}}" alt="orginal banh mi">
+            <br>
+            <a class="order" href="">Order now</a>
+        </div>
+        <div class="col-2">
+            <p>Vietnamese Coffee</p>
+            <img src="{{url_for('static', filename='images/viet_coffee.jpg')}}" alt="viet_coffee">
+            <br>
+            <a class="order" href="">Order now</a>
+        </div>
+        <div class="col-3">
+            <p>Chicken lemongrass Banh Mi</p>
+            <img src="{{url_for('static', filename='images/lemongrass-chicken-banh-mi.jpg')}}" alt="chicken banh mi">
+            <br>
+            <a class="order" href="">Order now</a>
+        </div>
+    </div>
+</body>
+
+</html>
